@@ -39,7 +39,8 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### Page formatting
 class "row" refers to the entire width of the page enabling sub-divs to partition the page into multiple columns.  
-Within that "row" you have columns (or "u"), with each column taking up the same % of width.
+Within that "row" you have columns (or "u"), with each column taking up the same % of width.  
+Usually the standard for Foundation is 12 columns/row. 8u = 8 columns & 4u = 4 columns.
 
 ### Blogging guide
 "_posts/" contains markdown files for blogs
