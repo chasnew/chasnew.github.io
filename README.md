@@ -38,9 +38,8 @@ Current theme was imported from [this repository](https://github.com/old-jekyll-
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ### Page formatting
-Ordering?  
-Left-sidebar: 4u=left side, 8u=right side, 6u=two columns  
-Right-sidebar: 8u=left side, 4u=right side, 6u=two columns  
+class "row" refers to the entire width of the page enabling sub-divs to partition the page into multiple columns.  
+Within that "row" you have columns (or "u"), with each column taking up the same % of width.
 
 ### Blogging guide
 "_posts/" contains markdown files for blogs
