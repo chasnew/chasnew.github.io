@@ -38,9 +38,9 @@ Current theme was imported from [this repository](https://github.com/old-jekyll-
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ### Page formatting
-Left-sidebar: 4u=left side, 8u=right side, 6u=two columns
-Right-sidebar: 8u=left side, 4u=right side, 6u=two columns
-Ordering?
+Ordering?  
+Left-sidebar: 4u=left side, 8u=right side, 6u=two columns  
+Right-sidebar: 8u=left side, 4u=right side, 6u=two columns  
 
 ### Blogging guide
 "_posts/" contains markdown files for blogs
