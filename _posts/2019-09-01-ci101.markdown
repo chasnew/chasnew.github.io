@@ -5,13 +5,12 @@ date:   2019-09-01
 ---
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/thumbnail.png">
+<img src="{{ site.baseurl }}/images/ci101/thumbnail.png">  
 thumbnail
 </p>
 Around 3 weeks ago, I attended the Machine Learning Research School (MLRS) 2019 in Bangkok, Thailand. The event basically includes lectures of the topics relevant to Artificial Intelligence (AI) and Machine Learning (ML). But one particular topic that I was looking for the most was Causal Inference taught by [Elias Bareinboim](https://causalai.net/). It’s one aspect of data science that is crucial but not taught widely enough in my opinion. I only became aware of this area only recently as well. So, this blog is my attempt to raise awareness on this topic and, perhaps, help better the practice of data science in general.
 
-What is Causal Inference (CI)?
-==============================
+<h1>What is Causal Inference (CI)?</h1>
 You’ve probably heard the catchphrase “correlation is not causation” before. But what does it mean to infer causation? The process of inferring causal relationships is called causal inference. This process is needed when we want to know whether a certain event/action causes another and doesn’t just correlate with or predict it. Still, we usually use statistical techniques to determine the causal effect. But statistics alone cannot inform us about causality (or anything really).  
 
 ## Causal Diagrams with the third variable
