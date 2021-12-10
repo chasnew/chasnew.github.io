@@ -13,6 +13,7 @@ You’ve probably heard the catchphrase “correlation is not causation” befor
 Let’s take a look at an example used in Elias’s lecture at MLRS. Let’s say we obtain a dataset containing data of people with a serious illness. The data indicates whether patients taking a drug (treatment) and whether they survive after taking the drug (outcome). We go ahead and explore the data and create a table showing statistics of recovery rate as in figure 1.  
 
 ![figure 1](/images/ci101/thumbnail.png)
+
 figure 1. table showing recovery rate of treatment and control groups
 From figure 1, it seems that patients who take the drug have better chance of surviving. But when we later take into account the variable sex of the patients, it results in the tables with different story to tell like in figure 2.
 
