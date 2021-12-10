@@ -5,7 +5,7 @@ date:   2019-09-01
 ---
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/thumbnail.png">  
+<img src="{{ site.baseurl }}/images/ci101/thumbnail.png"><br>
 thumbnail
 </p>
 Around 3 weeks ago, I attended the Machine Learning Research School (MLRS) 2019 in Bangkok, Thailand. The event basically includes lectures of the topics relevant to Artificial Intelligence (AI) and Machine Learning (ML). But one particular topic that I was looking for the most was Causal Inference taught by [Elias Bareinboim](https://causalai.net/). It’s one aspect of data science that is crucial but not taught widely enough in my opinion. I only became aware of this area only recently as well. So, this blog is my attempt to raise awareness on this topic and, perhaps, help better the practice of data science in general.
