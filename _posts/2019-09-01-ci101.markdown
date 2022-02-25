@@ -53,7 +53,7 @@ figure 5 Judea’s causal hierarchy showing different level of causal questions 
 According to Judea’s causal hierarchy, there are 3 levels of causal questions we can ask, including association, intervention, and counterfactual. This model is described as a hierarchy because if you have access to information at the higher levels, it’s implied that you can answer the queries at the lower levels as well. The lowest level of this hierarchy is association that includes correlational analyses and most predictive models (Pearl, 2019).
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/CI_engine.png" height="600" width=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/CI_engine.png" height="450" width=auto><br>
 figure 6. causal inference engine in Structural Causal Model
 </p>
 
