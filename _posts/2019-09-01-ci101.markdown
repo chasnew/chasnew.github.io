@@ -23,7 +23,7 @@ figure 1. table showing recovery rate of treatment and control groups
 From figure 1, it seems that patients who take the drug have better chance of surviving. But when we later take into account the variable age of the patients (here we split into a group of adults and children), it results in the tables with different story to tell like in figure 2.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/drug_ex2.png"><br>
+<img src="{{ site.baseurl }}/images/ci101/drug_ex2.png" class="fit image"><br>
 figure 2. table showing recovery rate of treatment and control groups separated by age (Adult vs Non-adult)
 </p>
 
@@ -57,7 +57,7 @@ According to Judea’s causal hierarchy, there are 3 levels of causal questions 
 figure 6. causal inference engine in Structural Causal Model
 </p>
 
-When we try to determine a causal effect of 2 or more variables, we have to be able to determine at least the interventional probability of those variables. Meaning, we will need to focus on P(Y|do(X)). But what does the notation do(X) mean? It means that we have control over variable X and determine which subject gets which value of X like in an experiment. Does that mean we can only answer this type of queries with experimental data? No! This is where SCM comes in. In the SCM framework, with your causal graph, you can perform “do-calculus” to convert the interventional query into the form of associational query that adjust for relevant variables as in figure 6. If the conversion is possible, it is said that your query is identifiable. From the example in figure 6, it appears that our query P(y|do(x)) is identifiable by adjusting for the confounder z. This is how you would attempt to infer causality in the SCM framework in general.
+When we try to determine a causal effect of 2 or more variables, we have to be able to determine at least the interventional probability of those variables. Meaning, we will need to focus on P(Y\|do(X)). But what does the notation do(X) mean? It means that we have control over variable X and determine which subject gets which value of X like in an experiment. Does that mean we can only answer this type of queries with experimental data? No! This is where SCM comes in. In the SCM framework, with your causal graph, you can perform “do-calculus” to convert the interventional query into the form of associational query that adjust for relevant variables as in figure 6. If the conversion is possible, it is said that your query is identifiable. From the example in figure 6, it appears that our query P(y\|do(x)) is identifiable by adjusting for the confounder z. This is how you would attempt to infer causality in the SCM framework in general.
 
 But as you may have noticed already, SCM mainly concerns with identification of the effect. It doesn’t tell us what type of relationships our variables of interest have or what estimation method we need to perform to determine the precise effect. But again it doesn’t mean whatever estimation method you end up using is assumption-free. Each of them has different assumptions regarding the type of relationship between the variables too. After all this is what I really want to emphasize. Know your assumptions and be explicit about them! It would add much more value to your data science work than just misleading correlational analyses.
 
