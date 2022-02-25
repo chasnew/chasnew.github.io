@@ -30,7 +30,7 @@ figure 2. table showing recovery rate of treatment and control groups separated 
 From what we can notice from the tables in figure 2, it seems that the patients are more likely to survive by not taking the drug for both adults and children now. This is a phenomenon called Simpson’s paradox. This phenomenon happens when some subgroup variables are neglected in the analysis resulting in a disappearance or reversal of patterns in the data. This phenomenon can be generally attributed to “confounder” variables. So, how do we prevent this from happening in the first place? We have to remember that statistics is just a tool. Analysis results can’t tell us anything without our assumptions or contexts. In a causal inference framework, Structural Causal Models (SCM), we express our assumptions using a causal graph, which is basically a Directed Acyclic Graph (DAG). Considering our example, there are 3 main potential causal graphs that would give us results as in figure 2. These three causal graphs are illustrated below in figure 3. Each of them reflects different assumptions of how the world works, or how taking the drug, age, and survival rate relate to one another in this scenario.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/causal_graphs.png"><br>
+<img src="{{ site.baseurl }}/images/ci101/causal_graphs.png" class="fit image"><br>
 figure 3. example of causal graphs
 </p>
 
@@ -53,7 +53,7 @@ figure 5 Judea’s causal hierarchy showing different level of causal questions 
 According to Judea’s causal hierarchy, there are 3 levels of causal questions we can ask, including association, intervention, and counterfactual. This model is described as a hierarchy because if you have access to information at the higher levels, it’s implied that you can answer the queries at the lower levels as well. The lowest level of this hierarchy is association that includes correlational analyses and most predictive models (Pearl, 2019).
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/CI_engine.png"><br>
+<img src="{{ site.baseurl }}/images/ci101/CI_engine.png" class="fit image"><br>
 figure 6. causal inference engine in Structural Causal Model
 </p>
 
