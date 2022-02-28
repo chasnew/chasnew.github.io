@@ -12,8 +12,8 @@ Suppose that we know the true data generating process, and it turns out that the
 
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n20.png" width="400">
-<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n50.png" width="400"><br>
+<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n20.png" width="30%">
+<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n50.png" width="30%"><br>
 figure 1. 100 confidence intervals from simulated data with a) 20 data points per student, b) 50 data points per student, and c) 100 data points per student
 </p>
 
