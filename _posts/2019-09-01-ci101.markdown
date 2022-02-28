@@ -38,7 +38,7 @@ figure 3. example of causal graphs
 According to figure 3, our first potential causal graph (graph A) indicates that the age variable is a confounder variable between the treatment and outcome variables. This means that the age variable partially determines who do (or do not) take the drug while it also influences the survival rate (adults and children have different base survival rate). Whereas, the second causal graph (graph B) reflects that the age variable partially mediates the effect of the drug on survival rate. But we can use our intuition to filter out this possibility because the drug (usually) shouldn’t be able to make adults biologically equivalent to children and vice versa. Lastly, graph C indicates that the relationships between drug, age, and survival rate are confounded by unobserved variables. Learning from this example, you might start thinking that we should throw in as many variables into the analysis as possible. But there’s another type of variables in the causal framework that’s called a collider. A collider variable in a causal graph will look like in figure 4 below.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/collider.png" class="fit image"><br>
+<img src="{{ site.baseurl }}/images/ci101/collider.png" max-width="80%" height=auto><br>
 figure 4. causal diagram of a collider (variable C)
 </p>
 
@@ -47,7 +47,7 @@ A collider variable is a variable that you must not incorporate into your analys
 ## Causal hierarchy and identification
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/causal_hierarchy.png"><br>
+<img src="{{ site.baseurl }}/images/ci101/causal_hierarchy.png" max-width="80%" height=auto><br>
 figure 5 Judea’s causal hierarchy showing different level of causal questions ([source](https://dl.acm.org/doi/10.1145/3241036))
 </p>
 
