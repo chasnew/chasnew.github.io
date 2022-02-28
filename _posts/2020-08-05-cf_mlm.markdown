@@ -12,9 +12,9 @@ Suppose that we know the true data generating process, and it turns out that the
 
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n20.png" width="33%">
-<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n50.png" width="33%">
-<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n100.png" width="33%"><br>
+<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n20.png" width="33%" height=auto>
+<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n50.png" width="33%" height=auto>
+<img src="{{ site.baseurl }}/images/cf_mlm/add_var_n100.png" width="33%" height=auto><br>
 figure 1. 100 confidence intervals from simulated data with a) 20 data points per student, b) 50 data points per student, and c) 100 data points per student
 </p>
 
@@ -22,7 +22,7 @@ I simulated 100 studies and calculated their respective 95% confidence intervals
 According to the definition of confidence intervals, roughly 95 intervals should contain the true parameter, which is 0. However, most of the calculated confidence intervals don’t contain 0 at all (false statistical significance). Moreover, with more number of data points per student, there is less number of confidence intervals that actually contain 0. This happens because we ignore the variation in the effect of the tutoring class on students resulting in more overconfidence intervals with larger sample sizes. Let’s try removing the variation between student effect and redo the simulation again.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/cf_mlm/null_model.png" max-width="80%"><br>
+<img src="{{ site.baseurl }}/images/cf_mlm/null_model.png" width="50%" height=auto><br>
 figure 2. 100 confidence intervals from a t-test of a non-varying effect between student data model
 </p>
 
@@ -30,7 +30,7 @@ figure 2. 100 confidence intervals from a t-test of a non-varying effect between
 Now, most of the confidence intervals contain the true parameter value even with the t-test. But what if there’s a real variation between student effect, and we want to account for it? A method to handle additional variance is to use multilevel/hierarchical/mixed effect model. This family of models will allow you to specify an additional level of data that causes a variation in the effect. In this example, that is the student-level variation. This model will also allow us to estimate effects for each level unit separately. Meaning, in this case, we can obtain the effect of the tutoring class for each individual student as well, but we will ignore them for now.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/cf_mlm/mixed_model_confints.png" max-width="80%"><br>
+<img src="{{ site.baseurl }}/images/cf_mlm/mixed_model_confints.png" width="50%" height=auto><br>
 figure 3. 100 confidence intervals from an estimate in a mixed effect model when there’s a variation in tutoring effect between students
 </p>
 
@@ -40,5 +40,4 @@ One thing you should be aware of is that statistical inference with mixed effect
 
 ### Extra notes
 1. This article is inspired by a preprint “generalizibility crisis” by Tal Yarkoni, in which he discusses issues that arise with mismatches between statistical models and verbal hypotheses more extensively [https://doi.org/10.31234/osf.io/jqw35](https://doi.org/10.31234/osf.io/jqw35).
-
 2. Here’s the link to an R notebook that I used to produce analyses and figures for this article: [https://htmlpreview.github.io/?https://raw.githubusercontent.com/chasnew/data_simulation_repo/master/unacc_var_mixedlm.html](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chasnew/data_simulation_repo/master/unacc_var_mixedlm.html)
