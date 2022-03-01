@@ -6,7 +6,7 @@ categories: update
 ---
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/thumbnail.png" max-width="80%" height=auto>
+<img src="{{ site.baseurl }}/images/ci101/thumbnail.png" width="50%" height=auto>
 </p>
 Around 3 weeks ago, I attended the Machine Learning Research School (MLRS) 2019 in Bangkok, Thailand. The event basically includes lectures of the topics relevant to Artificial Intelligence (AI) and Machine Learning (ML). But one particular topic that I was looking for the most was Causal Inference taught by [Elias Bareinboim](https://causalai.net/). It’s one aspect of data science that is crucial but not taught widely enough in my opinion. I only became aware of this area only recently as well. So, this blog is my attempt to raise awareness on this topic and, perhaps, help better the practice of data science in general.
 
@@ -17,7 +17,7 @@ You’ve probably heard the catchphrase “correlation is not causation” befor
 Let’s take a look at an example used in Elias’s lecture at MLRS (with a slight modification). Let’s say we obtain a dataset containing data of people with a serious illness. The data indicates whether patients taking a drug (treatment) and whether they survive after taking the drug (outcome). We go ahead and explore the data and create a table showing statistics of recovery rate as in figure 1.  
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/drug_ex1.png" max-width="80%" height=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/drug_ex1.png" width="70%" height=auto><br>
 figure 1. table showing recovery rate of treatment and control groups
 </p>
 
@@ -31,14 +31,14 @@ figure 2. table showing recovery rate of treatment and control groups separated 
 From what we can notice from the tables in figure 2, it seems that the patients are more likely to survive by not taking the drug for both adults and children now. This is a phenomenon called Simpson’s paradox. This phenomenon happens when some subgroup variables are neglected in the analysis resulting in a disappearance or reversal of patterns in the data. This phenomenon can be generally attributed to “confounder” variables. So, how do we prevent this from happening in the first place? We have to remember that statistics is just a tool. Analysis results can’t tell us anything without our assumptions or contexts. In a causal inference framework, Structural Causal Models (SCM), we express our assumptions using a causal graph, which is basically a Directed Acyclic Graph (DAG). Considering our example, there are 3 main potential causal graphs that would give us results as in figure 2. These three causal graphs are illustrated below in figure 3. Each of them reflects different assumptions of how the world works, or how taking the drug, age, and survival rate relate to one another in this scenario.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/causal_graphs.png" height="85%" width=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/causal_graphs.png" width="70%" height=auto><br>
 figure 3. example of causal graphs
 </p>
 
 According to figure 3, our first potential causal graph (graph A) indicates that the age variable is a confounder variable between the treatment and outcome variables. This means that the age variable partially determines who do (or do not) take the drug while it also influences the survival rate (adults and children have different base survival rate). Whereas, the second causal graph (graph B) reflects that the age variable partially mediates the effect of the drug on survival rate. But we can use our intuition to filter out this possibility because the drug (usually) shouldn’t be able to make adults biologically equivalent to children and vice versa. Lastly, graph C indicates that the relationships between drug, age, and survival rate are confounded by unobserved variables. Learning from this example, you might start thinking that we should throw in as many variables into the analysis as possible. But there’s another type of variables in the causal framework that’s called a collider. A collider variable in a causal graph will look like in figure 4 below.
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/collider.png" max-width="80%" height=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/collider.png" width="30%" height=auto><br>
 figure 4. causal diagram of a collider (variable C)
 </p>
 
@@ -47,14 +47,14 @@ A collider variable is a variable that you must not incorporate into your analys
 ## Causal hierarchy and identification
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/causal_hierarchy.png" max-width="80%" height=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/causal_hierarchy.png" width="80%" height=auto><br>
 figure 5 Judea’s causal hierarchy showing different level of causal questions ([source](https://dl.acm.org/doi/10.1145/3241036))
 </p>
 
 According to Judea’s causal hierarchy, there are 3 levels of causal questions we can ask, including association, intervention, and counterfactual. This model is described as a hierarchy because if you have access to information at the higher levels, it’s implied that you can answer the queries at the lower levels as well. The lowest level of this hierarchy is association that includes correlational analyses and most predictive models (Pearl, 2019).
 
 <p align="center">
-<img src="{{ site.baseurl }}/images/ci101/CI_engine.png" width="80%" height=auto><br>
+<img src="{{ site.baseurl }}/images/ci101/CI_engine.png" width="70%" height=auto><br>
 figure 6. causal inference engine in Structural Causal Model
 </p>
 
