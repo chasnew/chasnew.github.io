@@ -69,4 +69,4 @@ SCM is not the only framework existing for causal inference. To my knowledge, th
 
 ## References
 1. Pearl, J. (2019). The seven tools of causal inference, with reflections on machine learning. _Communications of the ACM_, 62(3), 54–60. doi: 10.1145/3241036
-2. Rohrer, J. (2018, March 19). That one weird third variable problem nobody ever mentions: Conditioning on a collider. Retrieved from http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/
+2. Rohrer, J. (2018, March 19). That one weird third variable problem nobody ever mentions: Conditioning on a collider. Retrieved from [http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/)
